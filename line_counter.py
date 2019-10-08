@@ -29,7 +29,7 @@ class Line_counter():
                     self.ctr += 1
         return self.ctr
 
-    def count_lines_file(self, path_file):
+    def count_lines_file(self, path_file=__file__):
         self.ctr = 0
         with open(path_file, 'r') as fd:
             fd = fd.readlines()
